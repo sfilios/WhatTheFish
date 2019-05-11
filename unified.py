@@ -21,7 +21,7 @@ with open('Fish_Data/fat_model.pkl', 'rb') as pickle_file:
     m = pickle.load(pickle_file)
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+app.title='WhatTheFish
 app.layout = html.Div([
 html.Div([
 
@@ -136,8 +136,8 @@ def predictor(contributors, area_x, mode, sub_reg, hab,
     predictions['Name'] = m.classes_
 
     tops = predictions.sort_values(by='Likelihood', ascending=False)
-    ret = tops.head(3)
-
+    ret = round(tops.head(3),2)
+    
     return html.Table(
     #header
     [html.Tr([html.Th(col) for col in ret.columns])] +
