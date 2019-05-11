@@ -21,7 +21,7 @@ with open('Fish_Data/fat_model.pkl', 'rb') as pickle_file:
     m = pickle.load(pickle_file)
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.title='WhatTheFish
+app.title='WhatTheFish'
 app.layout = html.Div([
 html.Div([
 
