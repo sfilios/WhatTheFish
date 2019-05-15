@@ -2,6 +2,8 @@
 
 https://whatthefish.ml 
 Project for Insight Data Science Fellowship
+A web app written from scratch using Python and Dash (a Flask based framework).
+The code to perform exploratory data analysis and train the model also written from scratch using Python and packages including Pandas, Numpy, Sci-kit Learn, and Matplotlib.
 
 **"What the Fish?"** is a web-app that uses data from the National Oceanic and Atmospheric Administration to predict the most likely fish that a recreational fisher will catch. It takes user inputs regarding their proposed fishing trip, and uses previous catch data to make predictions. The currently implemented model was trained on 2017 fishing data from 'catch' and 'trip' level data, which has information about fish caught as well as the people who caught them. It uses a Random Forest model, and predicts with approximately 60% accuracy on an "out-of-bag" sample. This compares to 12-15% accuracy if the most common fish or most common fish by subregion are always predicted. 
 
