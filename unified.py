@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 import pickle
+
 import dash
 import dash_core_components as dcc
 from dash.dependencies import Input, Output
 import dash_html_components as html
+
 import numpy as np
 import pandas as pd
 
