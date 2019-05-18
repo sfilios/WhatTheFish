@@ -1,7 +1,9 @@
 # WhatTheFish
 
 https://whatthefish.ml 
-Project for Insight Data Science Fellowship
+Project for Insight Data Science Fellowship. 
+
+Predicts top 3 most likely species of fish, given info about trip.
 
 A web app written from scratch using Python and Dash (a Flask based framework).
 The code to perform exploratory data analysis and train the model also written from scratch using Python and packages including Pandas, Numpy, Sci-kit Learn, and Matplotlib.
