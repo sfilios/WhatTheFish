@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import pickle
+import functools
+import gzip
 
 import dash
 import dash_core_components as dcc
@@ -14,9 +16,13 @@ EXTERNAL_STYLESHEETS = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 predictions = pd.DataFrame(columns=['Name', 'Likelihood'])
 
-# get the model
-with open('Fish_Data/fat_model.pkl', 'rb') as pickle_file:
-    m = pickle.load(pickle_file)
+#load model into cache 
+@functools.lru_cache()
+def get_model():
+    with gzip.open('Fish_Data/fat_model.pkl.gz', 'rb') as pickle_file:
+        return pickle.load(pickle_file)
+
+m = get_model()
 
 app = dash.Dash(__name__, external_stylesheets=EXTERNAL_STYLESHEETS)
 app.title = 'WhatTheFish'
