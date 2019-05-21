@@ -5,3 +5,5 @@ Fish_Data/.ipynb_checkpoints/
 ignore_test.txt
 
 .pytest_cache/
+
+__pycache__/
