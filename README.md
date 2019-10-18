@@ -1,6 +1,5 @@
 # WhatTheFish
 
-https://whatthefish.ml 
 Project for Insight Data Science Fellowship. 
 
 Predicts top 3 most likely species of fish, given info about trip.
